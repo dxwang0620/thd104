@@ -1,0 +1,318 @@
+@import url('./reset.css');
+
+
+/* --------------- top --------------- */
+.top{
+    /* outline: 2px solid red; */
+    display: flex;
+    background-color: #A3CC00;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 24px;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+
+.top a{
+    display: block;
+    padding-top: 8px;
+}
+
+.top img{
+    display: block;
+    width: 80px;
+    margin: 5px 0 5px 20px;
+}
+
+.top-right{
+    display: flex;
+    padding-right: 40px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.top-right a:nth-child(1){
+    display: block;
+    margin-left: 20px;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.top-right a:nth-child(2){
+    display: block;
+    margin-left: 20px;
+    line-height: 60px;
+    color: black;
+    text-decoration: none;
+    padding: 0 35px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.top-right a:nth-child(1):hover{
+    color:  #A3CC00;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,.2);
+}
+
+.top-right a:nth-child(2):hover{}
+
+
+/* --------------- main-left --------------- */
+
+.main{
+    margin: 200px auto 50px auto;
+    width: 1000px;
+    display: flex;
+    /* outline: 1px solid red; */
+}
+
+.main-left{
+    width: 50%;
+    /* outline: 1px solid red; */
+}
+
+.main-left h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #A3CC00;
+    margin-bottom: 30px;
+}
+
+.main-left ul{
+    display: flex;
+    padding-left: 50px;
+}
+
+.main-left ul li{
+    height: 100px;
+    width: 120px;
+    margin-left: 40px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.main-left ul li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.click{
+    color: #fff;
+}
+
+.main-left ul li:nth-child(1){
+    display: block;
+    line-height: 100px;
+    background-color: #A3CC00;
+    /* text-decoration: none; */
+    /* border: 2px solid black; */
+
+}
+
+.main-left li:nth-child(2){
+    display: block;
+    line-height: 100px;
+    /* text-decoration: none; */
+    border: 2px solid black;
+}
+
+.main-left h2{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-left div p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.main-left div a{ 
+    float: right;
+    font-size: 18px;
+    color: black;
+}
+
+/* --------------- left-middle --------------- */
+
+.left-middle{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.left-middle h1{
+    padding-top: 20px;
+    color: #A3CC00;
+    font-size: 28px;
+    /* font-weight: bold; */
+    
+}
+
+.left-middle p{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px 10px;
+    height: 30px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+/* --------------- left-buttom --------------- */
+
+.left-buttom h1{
+    padding-top: 20px;
+    font-size: 28px;
+    margin-bottom: 5px;
+
+}
+
+.left-buttom p{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.left-buttom a{
+    display: block;
+}
+
+.accept{
+    display: block;
+    margin: 40px auto 0 auto;
+    /* outline: 2px red solid; */
+    text-align: center;
+    line-height: 40px;
+    width: 40%;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #A3CC00;
+    border-radius: 15px;
+}
+
+/* --------------- main-right --------------- */
+
+.main-right{
+    /* outline: 2px solid red; */
+    padding:30px 30px 0 30px;
+    height: 450px;
+    background-color:  #A3CC00;
+    border-radius: 15px;
+    margin-left:30px ;
+    margin-top: 180px;
+}
+
+.right-top {
+    display: flex;
+    
+}
+
+.right-top h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.right-top p{
+    color: #fff;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+
+.right-buttom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+.right-buttom h1{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+.inside {
+    display: flex;
+}
+
+.inside ul{
+    width: 100%;
+}
+
+.inside li{
+    font-size: 20px;
+    color: #fff;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 40px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-right h2{
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+}
+
+/* --------------- buttom --------------- */
+
+.buttom{
+    display: flex;
+    background-color: #A3CC00;
+    height: 100px;
+    padding-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttom-left{
+    margin-left: 30px;
+    line-height: 50px;
+}
+
+.buttom-left a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+
+.buttom-right{
+    /* outline: 2px solid red; */
+    margin-right: 30px;
+}
+
+.buttom-right ul{
+    display: flex;
+    /* outline: 2px solid red; */
+    /* width: 100px; */
+    justify-content: right;
+}
+
+.buttom-right li{
+    margin-right: 30px;
+}
+
+
+.buttom-right a{
+    /* outline: 3px solid black; */
+    display: block;
+}
+
+.buttom-right i{
+    color: white;
+    font-size: 40px;
+}
