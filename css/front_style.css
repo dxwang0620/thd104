@@ -2,6 +2,7 @@
 
 
 /* --------------- top --------------- */
+
 .top{
     /* outline: 2px solid red; */
     display: flex;
@@ -11,8 +12,8 @@
     justify-content: space-between;
     font-size: 24px;
     position: fixed;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     z-index: 2;
 }
 
@@ -24,7 +25,7 @@
 .top img{
     display: block;
     width: 80px;
-    margin: 5px 0 5px 20px;
+    margin: 5px 0 0 20px;
 }
 
 .top-right{
@@ -55,7 +56,7 @@
 }
 
 .top-right a:nth-child(1):hover{
-    color:  #A3CC00;
+    color: #A3CC00;
     background-color: #fff;
     box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,.2);
 }
@@ -66,14 +67,12 @@
 /* --------------- block --------------- */
 
 .block{
-    width:1200px;
+    width: 1200px;
     /* outline: 5px red solid; */
     margin: 0 auto;
     margin-top: 130px;
     position: relative;
-    height:600px
-    
-
+    height:550px
 }
 
 .block-left{
@@ -81,8 +80,8 @@
     width: 400px;
     border-radius: 15px;
     position: absolute;
-    top:80px;
-    left:20px;
+    top: 85px;
+    left: 20px;
     height: 400px;
     z-index:1;
     background-color: #A3CC00 ;
@@ -108,7 +107,7 @@
     background-color: #fff;
     margin: 0 auto;
     width: 300px;
-    height:50px;
+    height: 50px;
     line-height: 50px;
     margin-top: 5px;
     
@@ -118,7 +117,7 @@
     color: white;
     background-color: black;
     width: 300px;
-    height:50px;
+    height: 50px;
     line-height: 50px;
     text-align: center;
     margin: 20px auto 20px auto;
@@ -127,7 +126,7 @@
 .block-right{
     /* outline: 2px red solid; */
     width: 1050px;
-    margin-right: 40px;
+    margin-right: 20px;
     position: absolute; 
     right: 20px;
     top: 40px; 
@@ -135,65 +134,99 @@
 
 
 
-/* --------------- main --------------- */
+/* --------------- wrapper --------------- */
 
-.main{
+.wrapper{
     font-size: 36px;
     padding-top: 20px;
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
+    /* outline: red solid 2px; */
 }
 
-.main h1{
-    margin-bottom: 2px;
+.wrapper h1{
+    font-size: 36px;
+    margin-bottom: 10px;
     font-weight: bold;
-    /* margin-left: 120px; */
 }
 
-.main span{
+.wrapper i{
+    color: gold;
+    font-size: 16px;
+    width: 20px;
+    margin-right: 5px;
+    /* outline: 2px red solid; */
+}
+
+.wrapper h2{
+    color: #A3CC00;
     font-size: 24px;
     font-weight: bolder;
+    margin-bottom: 15px;
 }
 
-.main span:nth-child(3){
-    float: right;
-    padding-top: 8px;
-}
-
-.main ul{
+.wrapper ul{
     /* outline: solid 2px green; */
     display: flex;
-    
 }
 
-.main li{
+.wrapper li{
+    outline: 3px #ccc solid ;
     flex-grow: 1;
+    padding: 10px;
+    border-radius: 10px;
+    flex-basis: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: all 1s;
 }
 
-.main li:last-child{
-    margin-right: 0;
+.wrapper li:hover{
+    transform: scale(1.05);
+   
 }
 
-.main ul li p{
-    font-size: 20px;
-    padding-top: 5px;
-}
-
-.main ul li p:last-child{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-
-.main img{
+.wrapper img{
     width: 100%;
-}
-
-.main a, img{
     display: block;
 }
 
+.wrapper a{
+    text-decoration: none;
+    color: black;
+}
 
+.wrapper span{
+    /* color: #A3CC00; */
+    /* outline: 2px solid black; */
+    font-size: 24px;
+    font-weight: bolder;
+    /* margin-bottom: 5px; */
+} 
+
+.wrapper span:nth-child(3){
+    float: right;
+    font-size: 20px;
+    margin-top: 10px;
+    /* padding-top: 8px; */
+    overflow: hidden;
+    /* outline: 2px red solid; */
+} */
+
+.wrapper li:last-child{
+    margin-right: 0;
+}
+
+.wrapper ul li p{
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.wrapper ul li p:last-child{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* --------------- main1 --------------- */
 
@@ -208,9 +241,16 @@
 }
 
 .main1 li{
-    margin-right: 20px
+    /* margin-right: 20px */
     /* background-color: red; */
 }
+
+.main1 li:nth-child(3){
+    margin-right: 0;
+    /* margin-right: 20px */
+    /* background-color: red; */
+}
+
 
 
 /* --------------- main2 --------------- */
@@ -225,10 +265,13 @@
 }
 
 .main2 li{
-    margin-right: 20px
-    /* background-color: red; */
 }
 
+.main2 li:nth-child(3){
+    margin-right: 0;
+    /* margin-right: 20px */
+    /* background-color: red; */
+}
 
 /* --------------- main3 --------------- */
 
@@ -237,7 +280,11 @@
 }
 
 .main3 li{
-    margin-right: 10px
+    margin-right: 10px;
+}
+
+.main3 li:nth-child(5){
+    margin-right: 0;
     /* background-color: red; */
 }
 
@@ -261,7 +308,6 @@
 
 .main4 li{
     width: 250px;
-    margin-right: 15px;
 }
 
 .main4 li:nth-child(3){
@@ -274,6 +320,10 @@
 
 
 .main4 li:nth-child(9){
+    margin-right: 0;
+}
+
+.main4 li:nth-child(12){
     margin-right: 0;
 }
 
@@ -314,4 +364,5 @@ h4{
 .footer {
     color: black;
     background-color: #A3CC00;
+    padding: 0 5px 5px 5px;
 }
