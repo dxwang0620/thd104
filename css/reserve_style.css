@@ -23,7 +23,7 @@ a.nav-link{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 
 .nav-menu{
@@ -176,11 +176,15 @@ a.nav-link{
     /* outline: 2px red solid; */
     height: 20px;
     width: 200px;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 #lightbox .password{
     height: 20px;
     width: 200px;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 #lightbox .remember{
@@ -314,19 +318,21 @@ h1{
 
 
 /* --------------- buttom --------------- */
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #A3CC00;
+}
 
 .buttom{
     display: flex;
-    background-color: #A3CC00;
-    height: 100px;
-    padding-top: 50px;
+    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    line-height: 100px;
 }
 
 .buttom-left{
     margin-left: 20px;
-    line-height: 50px;
 }
 
 .buttom-left a{
@@ -338,18 +344,17 @@ h1{
 
 .buttom-right{
     /* outline: 2px solid red; */
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .buttom-right ul{
     display: flex;
     /* outline: 2px solid red; */
     /* width: 100px; */
-    justify-content: right;
 }
 
 .buttom-right li{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 
@@ -360,7 +365,7 @@ h1{
 
 .buttom-right i{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .last{
@@ -380,18 +385,70 @@ h1{
 
 @media screen and (max-width: 700px){
 
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #A3CC00;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        border-top: 1px solid white;
+    }
+ 
+    .dropdown{
+        padding: 16px 0;
+        border-bottom: 2px solid white;
+        width: 100%
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: none;
+    } 
+
     .main-buttom li{
         margin-right: 40px;
     }
 
     .last p{
-        font-size: 12px;
+        font-size: 2vw;
     }
 }
 
 @media screen and (max-width: 600px){
+
     .main-buttom li:nth-child(3){
         display: none;
+    }
+
+    .buttom-left{
+        margin-left: 10px;
+    }
+
+    .buttom-right{
+        margin-right: 5px;
     }
 }
 
@@ -399,6 +456,15 @@ h1{
 
     .main-buttom li{
         margin-right: 20px;
+    }
+    
+    .buttom-left a{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .buttom-right i{
+        font-size: 20px;
     }
 }
 

@@ -66,10 +66,10 @@
                         </ol>
                     </li>
                     <li class="dropdown">
-                        <a href="" class="nav-link">Hi Wang!</a>
+                        <a href="" class="nav-link">會員登入</a>
                         <ol class="dropdown-content dropdown-content2">
-                            <li><button class="btn">帳號設定</button></li>
-                            <li><a href="">登出</a></li>
+                            <li><button class="btn">登入</button></li>
+                            <li><a href="">註冊</a></li>
                         </ol>
                     </li>
                 </ul>
@@ -259,12 +259,12 @@
             </div>
         
         </div>
-        
-        <div class="last">
-            本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
-        </div>
 
     </footer>
+
+    <div class="last">
+        本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
+    </div>
     
 </body>
 
@@ -282,5 +282,29 @@
             },
         });
 
+        let lightbox_el = document.getElementById('lightbox');
+    let btn_el = document.getElementsByClassName('btn')[0];
+    btn_el.addEventListener('click', function(){
+        lightbox_el.classList.remove('none');
+    });
+
+    lightbox_el.addEventListener('click', function(){
+        lightbox_el.classList.add('none');
+    });
+
+    lightbox_el.querySelector('article').addEventListener('click',function(e){
+        e.stopPropagation();
+    });
+
+    
+    let hamburger = document.querySelector('.hamburger');
+        let navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function(){
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
     </script>
+    
 </html>

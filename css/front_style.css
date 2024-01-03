@@ -171,12 +171,15 @@ a.nav-link{
     /* outline: 2px red solid; */
     height: 20px;
     width: 200px;
-    outline: 1px black solid;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 #lightbox .password{
     height: 20px;
     width: 200px;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 #lightbox .remember{
@@ -364,7 +367,6 @@ section .left ul{
     /* outline: 2px red solid; */
 }
 
-
 @keyframes t3 {
     0%{
         opacity: 0;
@@ -377,15 +379,15 @@ section .left ul{
 }
 
 section .left ul input{
-    width: 100%;
+    width: 270px;
     height: 30px;
     padding-left: 5px;
 }
 
 section .left ul .search{
     outline: 0;
-    width: 50%;
-    margin: 0 65px;
+    width: 200px;
+    margin: 0 40px;
     background-color: black;
     color:white;
  
@@ -573,6 +575,14 @@ footer{
         width: 350px;
     }
 
+    section .left ul input{
+        width: 240px;
+    }
+
+    section .left ul .search{
+        width: 160px;
+    }
+
 }
 
 @media screen and (max-width: 1000px){
@@ -633,19 +643,24 @@ footer{
     }
 
     section .left{
-        width: 80vw;
-        height: 45vw;
+        width: 700px;
         margin: 0 auto;
         position: static;
+    }
+
+    section .left ul input{
+        width: 500px;
+    }
+
+    section .left ul .search{
+        width: 200px;
+        margin: 0 155px;
     }
 
     section .left h1{
         padding-top: 15px;
     }
 
-    section .left ul .search{
-        margin: 0 120px;
-    }
 }
 
 @media screen and (max-width: 800px){
@@ -656,14 +671,24 @@ footer{
     }
 
     section .left{
-        width: 70vw;
-        height: 50vh;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    section .left ul input{
+        width: 400px;
+    }
+
+    section .left ul .search{
+        width: 160px;
+        margin: 0 130px;
     }
 
     section .left h1{
         padding-top: 20px;
         font-size: 4vw;
     }
+
 
     section .left h2{
         font-size: 3vw;
@@ -673,9 +698,6 @@ footer{
         height: 20px;
     }
 
-    section .left ul .search{
-        margin: 0 83px;
-    }
 }
 
 @media screen and (max-width: 700px){
@@ -763,10 +785,6 @@ footer{
         text-align: center;
     }
 
-    section .left{
-        height: 40vh;
-    }
-
     section .left h1{
         padding-left: 0;
     }
@@ -790,13 +808,19 @@ footer{
         margin: 30px auto 100px auto;
     }
 
+    section .left{
+        width: 400px;
+        height: 300px;
+    }
+
     section .left ul .search{
-        margin: 0 76px;
+        margin: 0 60px;
         height: 25px;
     }
 
     section .left ul input{
         height: 20px;
+        width: 270px;
     }
 
     section .left ul li p{
@@ -918,9 +942,6 @@ footer{
         margin-right: 0;
     }
 
-    section .left{
-        height: 40vh
-    }
 
     section .left ul .search {
         margin: 0 50px;
@@ -951,7 +972,7 @@ footer{
     }
 
     section .left ul .search{
-        margin: 0 55px;
+        margin: 0 39px;
     }
 
     section .left h1{
