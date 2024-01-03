@@ -946,7 +946,7 @@ footer{
 
 
     section .left{
-        height: 300px;
+        height: 320px;
         width: 350px;
     }
 
@@ -961,6 +961,10 @@ footer{
 
     section .left ul li p{
         font-size: 15px;
+    }
+
+    section .left ul input{
+        width: 230px;
     }
 
     .main3 ul{
