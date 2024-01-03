@@ -693,6 +693,15 @@ footer{
     .buttom-right i{
         font-size: 20px;
     }
+
+    .left-middle2 ul li{
+       font-size: 20px;
+    }
+
+    .left-middle2 ul input{
+        width: 30px;
+        height: 15px;
+    }
 }
 
 @media screen and (max-width: 430px){
@@ -702,10 +711,6 @@ footer{
         padding-bottom: 30px;
     }
 
-    .left-middle2 ul li{
-        /* outline: 2px red solid; */
-        font-size: 12px;
-    }
 
     .main-left .choose ul li{
         margin-left: 10px;
@@ -721,6 +726,11 @@ footer{
 
     .main-right{
         height: 395px;
+    }
+
+    .left-middle2 ul input{
+        width: 25px;
+        height: 15px;
     }
 }
 
