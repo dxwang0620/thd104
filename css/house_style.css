@@ -1,74 +1,221 @@
 @import url('reset.css');
 
-/* --------------- top --------------- */
-.top{
-    /* outline: 2px solid red; */
-    display: flex;
+/* --------------- header --------------- */
+
+header{
     background-color: #A3CC00;
     height: 100px;
     width: 100%;
-    justify-content: space-between;
-    font-size: 24px;
     position: fixed;
-    z-index: 1;
-    
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
 
-.top a{
-    display: block;
-}
-
-.top img{
-    display: block;
-    height: 80px;
-    width: 80px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.top-right{
-    display: flex;
-    padding-right: 40px;
-    height: 80px;
-    padding-top: 10px;
-}
-
-.top-right a:nth-child(1){
-    display: block;
-    margin-left: 20px;
-    line-height: 80px;
+a.nav-link{
     color: white;
     text-decoration: none;
-    padding: 0 20px;
+    font-size: 20px;
 }
 
-.top-right a:nth-child(2){
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: black
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
     display: block;
-    margin-left: 20px;
-    line-height: 80px;
-    color: black;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown a{
+    display: block;
+    padding-bottom: 5px;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    left: -10px;
+}
+
+.dropdown-content li{
+    width: 100px;
+    /* padding: 10px 0px; */
+}
+
+.dropdown-content li a{
+    font-size: 20px;
+    color: white;
     text-decoration: none;
-    padding: 0 35px;
-    background-color: #fff;
-    border-radius: 30px;
+    display: block;
+    text-align: center;
+    background-color:#A3CC00;
+    padding: 15px 0;
 }
 
-.top-right a:nth-child(1):hover{
-    color:  #A3CC00;
-    background-color: #fff;
-    box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,.2);
+.dropdown-content a:hover {
+    background-color: #e5e5e5;
 }
 
-.top-right a:nth-child(2):hover{}
+.dropdown:hover .dropdown-content{
+    display: block;
+} 
+
+.dropdown-content2 button{
+    width: 100px;
+    background-color: #A3CC00;
+    color: white;
+    border: none;
+    /* padding: 10px 25px; */
+    padding: 15px 0;
+    font-size: 20px;
+    /* outline: 2px red solid; */
+}
+
+.dropdown-content2 button:hover{
+    background-color: #e5e5e5;
+}
+
+/* --------------- lightbox --------------- */
+
+#lightbox{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .5);
+    z-index: 3;
+}
+
+#lightbox > article{
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 10px dashed #A3CC00
+}
+
+.none{
+    display: none;
+}
+
+#lightbox article h1{
+    color: #A3CC00;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 50px;
+    /* outline: 2px red solid; */
+}
+
+
+#lightbox article ul{
+
+    text-align: center;
+    margin: 30px 50px;
+    /* outline: 2px red solid; */
+}
+
+
+#lightbox article ul li{
+    margin-bottom: 5px;
+}
+   
+
+#lightbox article ul p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    margin: 5px 150px;
+    /* outline: 2px red solid; */
+}
+
+#lightbox .username{
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+    height: 20px;
+    width: 200px;
+}
+
+#lightbox .password{
+    height: 20px;
+    width: 200px;
+}
+
+#lightbox .remember{
+    /* outline: 1px red solid; */
+    margin-left: 140px;
+}
+
+#lightbox .forget{
+    margin: 20px 0px 10px 110px;
+ 
+}
+
+#lightbox .forget span{
+    color: black;
+}
+
+#lightbox .login{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
 
 
 /* --------------- block --------------- */
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    outline: 2px red solid;
+}
 
 .block{
     padding-top: 150px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 20px auto;
+    margin: 0 20px 20px 20px;
     /* outline: red solid 2px; */
 }
 
@@ -94,7 +241,7 @@
 
 
 .block-pic{
-    margin: 20px auto 20px auto;
+    margin: 20px;
     /* outline: 5px solid green; */
     display: flex;
     /* width: 1200px; */
@@ -124,7 +271,6 @@
 .pic2{
     background-image: url(../img/house_page/2.png);
     flex-grow: 1;
-    filter: blur(1px);
 }
 
 .pic3{
@@ -135,13 +281,11 @@
 .pic4{
     background-image: url(../img/house_page/4.png);
     flex-grow: 1;
-    filter: blur(1px);
 }
 
 .pic5{
     background-image: url(../img/house_page/5.png);
     flex-grow: 1;
-    filter: blur(1px);
 
 }
 .block-pic li:hover{
@@ -152,13 +296,8 @@
 
 /* --------------- main --------------- */
 
-.main{
-    width: 1000px;
-}
-
-
 .main-top{
-    margin: 0 auto;
+    margin: 0 20px;
     display: flex;
     /* margin: 0 240px 20px 240px; */
     /* outline: 3px solid red; */
@@ -242,21 +381,37 @@
 }
 
 .main-right p{
-    background-color: white;
-    margin: 10px auto 20px auto;
-    height: 50px;
-    width: 70%;
-    line-height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.main-right h2{
-    /* border: 1px solid black; */
-    background-color: black;
-    margin: 0 auto;
-    width: 70%;
-    height: 50px;
-    line-height: 50px;
+.main-right ul{
+    /* outline: 2px red solid; */
+    margin: 0 40px;
+}
 
+.main-right li{
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+    width: 70%;
+}
+
+.main-right li input{
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.main-right .reserve{
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    width: 60%;
 }
 
 .main-right a{
@@ -270,7 +425,7 @@
 
 /* --------------- main2 --------------- */
 .main-buttom{
-    margin: 60px auto 10px auto;
+    margin: 60px 20px 10px 20px;
     /* outline: 2px red solid; */
     
 }
@@ -285,6 +440,7 @@
 .main-buttom ul{
     display: flex;
     /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 
 .main-buttom li{
@@ -294,7 +450,7 @@
     margin-right: 20px;
     /* outline: 1px solid red; */
     display: flex;
-    flex-basis: 0;
+    flex-basis: 300px;
     flex-grow: 1;
     padding: 10px 20px;
     /* flex-direction: column; */
@@ -382,3 +538,104 @@
     color: white;
     font-size: 40px;
 }
+
+.last{
+    color: black;
+    background-color: #A3CC00;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    .main-buttom li:nth-child(3){
+        margin-right: 20px;
+    }
+
+    .main-buttom li:nth-child(6){
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    
+    .main-buttom li:nth-child(2){
+        margin-right: 0px;
+    }
+    
+    .main-buttom li:nth-child(3){
+        margin-right: 20px;
+    }
+
+    .main-buttom li:nth-child(4){
+        margin-right: 0px;
+    }
+
+    .main-buttom li:nth-child(6){
+        margin-right: 0px;
+    }
+}    
+
+
+@media screen and (max-width: 742px){
+
+    .main-top{
+        flex-direction: column;
+    }
+
+    .main-left{
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .main-left h1{
+        font-size: 28px;
+    }
+
+    .main-left p{
+        font-size: 20px;
+    }
+
+    .main-left h2{
+        font-size: 20px;
+    }
+
+    .main-left h4{
+        font-size: 20px;
+    }
+
+    .main-right{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-buttom li:nth-child(1){
+        margin-right: 0;
+    }
+
+    .main-buttom li:nth-child(3){
+        margin-right: 0;
+    }
+
+    .main-buttom li:nth-child(5){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .main-right{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .main-left ul li {
+        flex-basis: 80px;
+    }
+
+}
+
+
+    
+    
+    

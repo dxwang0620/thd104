@@ -9,132 +9,280 @@
 </head>
 <body>
     
-      <!--------------- top --------------->
+        <!----------------- header ----------------->
 
-    <div class="top">
+        <header>
         
-        <a href="project_front.html"><img src="./img/Group 83.png" alt=""></a>
-               
-        <div class="top-right">
-            <a href="">加入我們</a>
-            <a href="">Hi! Wang</a>
-        </div>
-        
-    </div>
+            <nav class="navbar">
+                
+                <a href="index.html" class="nav-branding"><img src="./img/Group 83.png" alt=""></a>
+                
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="" class="nav-link">最新消息</a>
+                        <ol class="dropdown-content">
+                            <li><a href="">發燒好評</a></li>
+                            <li><a href="">住宿優惠</a></li>
+                            <li><a href="">季節活動</a></li>
+                            <li><a href="">活動體驗</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">特色房源</a>
+                        <ol class="dropdown-content">
+                            <li><a href="">綠建築</a></li>
+                            <li><a href="">前衛風格</a></li>
+                            <li><a href="">莊園</a></li>
+                            <li><a href="">歷史建築</a></li>
+                            <li><a href="">農場</a></li>
+                            <li><a href="">風車</a></li>
+                            <li><a href="">貨櫃屋</a></li>
+                            <li><a href="">露營車</a></li>
+                            <li><a href="">蒙古包</a></li>
+                            <li><a href="">露營車</a></li>
+                            <li><a href="">船屋</a></li>
+                            <li><a href="">塔樓</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">加入我們</a>
+                        <ol class="dropdown-content">
+                            <li><a href="">刊登房源</a></li>
+                            <li><a href="">廠商合作</a></li>
+                            <li><a href="">工作機會</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">說明中心</a>
+                        <ol class="dropdown-content">
+                            <li><a href="project_guide.html">旅客指南</a></li>
+                            <li><a href="project_guide.html">房東指南</a></li>
+                            <li><a href="project_guide.html">換宿幫助</a></li>
+                            <li><a href="project_guide.html">公司</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">會員登入</a>
+                        <ol class="dropdown-content dropdown-content2">
+                            <li><button class="btn">登入</button></li>
+                            <li><a href="">註冊</a></li>
+                        </ol>
+                    </li>
+                </ul>
     
-    <!--------------- main --------------->
-
-    <div class="main" >
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+    
+            </nav>
+            
+        </header>
+    
+        <!----------------- lightbox ----------------->
+    
+        <div id="lightbox" class='none'>
+    
+            <article>
+    
+                <h1>會員登入</h1>
+               
+                <ul>
+    
+                    <li>
+                        <p>帳號</p>
+                        <input class="username" type="text" />
+                    </li>
+                    <li>
+                        <p>密碼</p>
+                        <input class="password" type="text" />
+                    </li>
+                    <li>
+                        <input class="remember" type="radio" name="xx" /> 
+                        <span>記住我</span>
         
+                        <div class="forget">
+                            <a href=""><span>忘記密碼</span></a>
+                            <a href="project_information.html"><span>註冊</span></a>
+                        </div>
+                    </li>
+    
+                    <input class="login" type="submit" value="登入" />   
+    
+                </ul>
+    
+            </article>
+            
+        </div>
+    
+    <!--------------- wrapper --------------->
+
+    <div class="wrapper">
+
         <div class="main-left">
             
-            <h1> <span>預定</span></h1>
+            <h1>預定</h1>
 
-            <ul>
-                <li><a href="" class ="click">我是旅客</a></li>
-                <li><a href="">我想換宿</a></li>
-            </ul>
+            <div class="choose">
 
-            <h2>您的訂房</h2>
+                <ul>
+                    <li><button class="btn1 color1" id="btn1"><p>我是旅客</p></button></li>
+                    <li><button class="btn2" id="btn2"><p>我想換宿</p></button></li>
+                </ul>
 
-            <div>
-            <p>時間 :   12/18 - 12/19  <a href="">重新編輯</a></p>
-            <p>人數 :     6 人  <a href="">重新編輯</a></p>
             </div>
 
-            <div class="left-middle">
-
-                <h1>付款方式</h1>
-
-                <p>信用卡/簽帳卡/線上支付</p>
-                <p>卡號</p>
-                <p>到期日</p>
-                <p>安全碼</p>
-                <p>帳單地址</p>
+            <div class="left1 " id="kv1">
                 
-            </div>
+                <h2>您的訂房</h2>
 
-            <div class="left-buttom">
+           
+                <p>時間 :   12/18 - 12/19  <a href="">重新編輯</a></p>
+                <p>人數 :     6 人  <a href="">重新編輯</a></p>
 
-                <h1>房屋資訊</h1>
-                <p>入住時間: 2PM    退房時間: 11AM</p>
-                <p>全面禁菸</p>
-                <p>嚴禁訪客</p> 
-                <p>周遭旅遊景點</p>
-                <a href="">查看更多資訊</a>
-                <h1>退訂規則</h1>
-                <p>全額退款 : 入住前兩個禮拜</p>
-                <p>部分退款 : 入住前三天 </p>
-                <p>無法退款 : 入住當日</p>
-                <a href="">查看詳細規則</a>
-                <h1>綠能指標</h1>
-                <p>日常節能、室內環境、二氧化碳減量...</p>
-                <a href="">查看更多指標</a>
+                <div class="left-middle">
+
+                    <h1>付款方式</h1>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="信用卡/簽帳卡/線上支付">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="卡號">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="到期日">
+                        </li>
+                        <li>   
+                            <input type="text" placeholder="安全碼">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="帳單地址">
+                        </li>
+
+                    </ul>
+                </div>   
+
+                <div class="left-buttom">
+
+                    <h1>房屋資訊</h1>
+                    <p>入住時間: 2PM    退房時間: 11AM</p>
+                    <p>全面禁菸</p>
+                    <p>嚴禁訪客</p> 
+                    <p>周遭旅遊景點</p>
+                    <a href="">查看更多資訊</a>
+                    <h1>退訂規則</h1>
+                    <p>全額退款 : 入住前兩個禮拜</p>
+                    <p>部分退款 : 入住前三天 </p>
+                    <p>無法退款 : 入住當日</p>
+                    <a href="">查看詳細規則</a>
+                    <h1>綠能指標</h1>
+                    <p>日常節能、室內環境、二氧化碳減量...</p>
+                    <a href="">查看更多指標</a>
+                </div>
+ 
             </div>
             
-            <a href="project_reserve.html" class = "accept"><p>確認訂單</p></a>
+            <div class="left2 none" id="kv2">
+                
+                <h2>您的訂房</h2>
+    
+               
+                <p>時間 :   12/18 - 12/19  <a href="">重新編輯</a></p>
+                <p>人數 :     6 人  <a href="">重新編輯</a></p>
+                
+                <div class="left-middle2">
+
+                    <h1>付款方式</h1>
+                    <p>選擇換宿日期</p>
+                    <ul>
+                        <li>
+                        <input type="checkbox" >12/1
+                        <input type="checkbox" >12/12
+                        <input type="checkbox" >12/24
+                        <input type="checkbox" >12/30
+                        </li>
+                        
+                    </ul>
+                </div>   
+
+
+                <div class="left-buttom">
+
+                    <h1>房屋資訊</h1>
+                    <p>入住時間: 2PM    退房時間: 11AM</p>
+                    <p>全面禁菸</p>
+                    <p>嚴禁訪客</p> 
+                    <p>周遭旅遊景點</p>
+                    <a href="">查看更多資訊</a>
+                    <h1>退訂規則</h1>
+                    <p>全額退款 : 入住前兩個禮拜</p>
+                    <p>部分退款 : 入住前三天 </p>
+                    <p>無法退款 : 入住當日</p>
+                    <a href="">查看詳細規則</a>
+                    <h1>綠能指標</h1>
+                    <p>日常節能、室內環境、二氧化碳減量...</p>
+                    <a href="">查看更多指標</a>
+                </div>
+
+            </div>
 
         </div>
-        
-        <div class ="main-right">
+            
+            
+        <div class="main-right">
 
             <div class="right-top">
-
+    
                 <img src="./img/checkout_page/1.png" alt="">
-                
+                    
                 <ul>
                     <h1>優美聖地</h1>
                     <p>680則評論</p>
                 </ul>
-                
-
+                    
             </div>
-
-
-            
+                
             <div class="right-buttom">
-
+    
                 <h1>價格詳情</h1>
-
-                    <div class = "inside">
-
-                        <ul>
-                            <li><p>價格</p></li>
-                            <li><p>人數</p></li>
-                            <li><p>折價</p></li>
-                        </ul>   
-
-                        <ul>
-                            <li><p>$1,680</p></li>
-                            <li><p>X6</p></li>
-                            <li><p>-$1,200</p></li>
-                        </ul>
-
-                     </div>
-                
-            </div>
-
+    
+                <div class = "inside">
+    
+                    <ul>
+                        <li><p>價格</p></li>
+                        <li><p>人數</p></li>
+                        <li><p>折價</p></li>
+                    </ul>   
+    
+                    <ul>
+                        <li><p>$1,680</p></li>
+                        <li><p>X6</p></li>
+                        <li><p>-$1,200</p></li>
+                    </ul>
+    
+                </div>
+                    
+            </div> 
+    
             <h2>總價 <span>$8,800</span></h2>
-            
-            
-    
+
         </div>
-    
-          
+
     </div>
+    <div><a href="project_reserve.html" class = "accept">確認訂單</a></div>
+    <!--------------- buttom --------------->
+    
+    <footer>
 
-           <!--------------- buttom --------------->
-
-           <div class="buttom">
+        <div class="buttom">
                    
             <div class="buttom-left">
                 <a href="">關於我們</a>
                 <a href="">隱私權</a>
                 <a href="">客服中心</a>
                 <a href="">相關條款</a>
-                <p>
-                    本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
-                </p>
             </div>
             
             <div class="buttom-right">
@@ -148,7 +296,59 @@
             </div>
             
         </div>
+
+        <div class="last">
+            <p>
+            本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
+            </p>
+        </div>
+
+    </footer>
+
 </body>
+
+<script>
+
+    let kv1_el = document.getElementById('kv1');
+    let kv2_el = document.getElementById('kv2');
+
+    let btn1_el = document.getElementById('btn1');
+    let btn2_el = document.getElementById('btn2');
+
+    btn1_el.addEventListener('click', function(){
+        kv1_el.classList.remove('none');
+        kv2_el.classList.add('none');
+        btn1_el.classList.add('color1');
+        btn2_el.classList.remove('color1');
+    })
+
+    
+    btn2_el.addEventListener('click', function(){
+        kv1_el.classList.add('none');
+        kv2_el.classList.remove('none');
+        btn1_el.classList.remove('color1');
+        btn2_el.classList.add('color1');
+
+    });
+
+    let lightbox_el = document.getElementById('lightbox');
+    let btn_el = document.getElementsByClassName('btn')[0];
+    btn_el.addEventListener('click', function(){
+        lightbox_el.classList.remove('none');
+    });
+
+    lightbox_el.addEventListener('click', function(){
+        lightbox_el.classList.add('none');
+    });
+
+    lightbox_el.querySelector('article').addEventListener('click',function(e){
+        e.stopPropagation();
+    });
+
+
+
+</script>
+
 </html>
 
  

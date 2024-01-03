@@ -10,22 +10,116 @@
 
 <body>
     
-    <!--------------- top --------------->
+        <!----------------- header ----------------->
 
-    <div class="top">
+        <header>
         
-        <a href="project_front.html"><img src="./img/Group 83.png" alt=""></a>
+            <nav class="navbar">
+                
+                <a href="index.html" class="nav-branding"><img src="./img/Group 83.png" alt=""></a>
+                
+                <ul class="nav-menu">
+                    <li class="dropdown">
+                        <a href="" class="nav-link">最新消息</a>
+                        <ol class="dropdown-content">
+                            <li><a href="">發燒好評</a></li>
+                            <li><a href="">住宿優惠</a></li>
+                            <li><a href="">季節活動</a></li>
+                            <li><a href="">活動體驗</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">特色房源</a>
+                        <ol class="dropdown-content">
+                            <li><a href="">綠建築</a></li>
+                            <li><a href="">前衛風格</a></li>
+                            <li><a href="">莊園</a></li>
+                            <li><a href="">歷史建築</a></li>
+                            <li><a href="">農場</a></li>
+                            <li><a href="">風車</a></li>
+                            <li><a href="">貨櫃屋</a></li>
+                            <li><a href="">露營車</a></li>
+                            <li><a href="">蒙古包</a></li>
+                            <li><a href="">露營車</a></li>
+                            <li><a href="">船屋</a></li>
+                            <li><a href="">塔樓</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">加入我們</a>
+                        <ol class="dropdown-content">
+                            <li><a href="">刊登房源</a></li>
+                            <li><a href="">廠商合作</a></li>
+                            <li><a href="">工作機會</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">說明中心</a>
+                        <ol class="dropdown-content">
+                            <li><a href="project_guide.html">旅客指南</a></li>
+                            <li><a href="project_guide.html">房東指南</a></li>
+                            <li><a href="project_guide.html">換宿幫助</a></li>
+                            <li><a href="project_guide.html">公司</a></li>
+                        </ol>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">會員登入</a>
+                        <ol class="dropdown-content dropdown-content2">
+                            <li><button class="btn">登入</button></li>
+                            <li><a href="">註冊</a></li>
+                        </ol>
+                    </li>
+                </ul>
+    
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+    
+            </nav>
+            
+        </header>
+    
+        <!----------------- lightbox ----------------->
+    
+        <div id="lightbox" class='none'>
+    
+            <article>
+    
+                <h1>會員登入</h1>
                
-        <div class="top-right">
-            <a href="">加入我們</a>
-            <a href="project_login.html">登入</a>
-        </div>
+                <ul>
+    
+                    <li>
+                        <p>帳號</p>
+                        <input class="username" type="text" />
+                    </li>
+                    <li>
+                        <p>密碼</p>
+                        <input class="password" type="text" />
+                    </li>
+                    <li>
+                        <input class="remember" type="radio" name="xx" /> 
+                        <span>記住我</span>
         
-    </div>
+                        <div class="forget">
+                            <a href=""><span>忘記密碼</span></a>
+                            <a href="project_information.html"><span>註冊</span></a>
+                        </div>
+                    </li>
+    
+                    <input class="login" type="submit" value="登入" />   
+    
+                </ul>
+    
+            </article>
+            
+        </div>
 
     <!--------------- block --------------->
-
-    <div class="block main">
+    <div class="wrapper">
+    <div class="block">
 
         <h1>優美聖地</h1>
         
@@ -36,7 +130,7 @@
 
     </div>  
 
-    <div class="block-pic main">
+    <div class="block-pic">
         
         <img src="./img/house_page/1.png" alt="">
 
@@ -51,7 +145,7 @@
 
     <!--------------- main --------------->
 
-    <div class="main-top main">
+    <div class="main-top">
 
         <div class="main-left">
             <h1>關於優美聖地</h1>
@@ -78,13 +172,25 @@
 
         <div class="main-right">
 
-                <h1>$1,680 TWD</h1>
-                <p>入住日期</p>
-                <p>退房日期</p>
-                <p>人數</p>
+                <h1>$1,680 TWD </h1>
+            <ul>
+                <li>
+                    <p>入住日期</p>
+                    <input type="date" placeholder="入住日期">
+                </li>
+                <li>
+                    <p>退房日期</p>
+                    <input type="date" placeholder="退房日期">
+                </li>
+                <li>
+                    <p>入數</p>
+                    <input type="text" placeholder="退房日期">
+                </li>
+                <li>
+                    <a href="project_checkout.html"><input type="submit" class="reserve" value="預定"></a>
+                </li>
                 
-                <a href="project_checkout.html"><h2>預定</h2></a>
-
+            </ul>
         </div>
 
      
@@ -94,7 +200,7 @@
 
     <!--------------- main-buttom --------------->
 
-    <div class="main-buttom main">
+    <div class="main-buttom">
 
         <h1>租客評論</h1>
         <ul>
@@ -121,9 +227,7 @@
                 <p>生活設施齊全，但有一些小地方需要改進，比如某些傢俱已經有些...</p>
                 </div>
             </li>
-        </ul>
-
-        <ul>
+        
             <li>
                 <img src="./img/house_page/9.png" alt="">
                 <div>
@@ -153,20 +257,19 @@
         </div>
       
     </div>
-
+    </div>
 
            <!--------------- buttom --------------->
 
-           <div class="buttom">
+    <footer>
+
+        <div class="buttom">
                    
             <div class="buttom-left">
                 <a href="">關於我們</a>
                 <a href="">隱私權</a>
                 <a href="">客服中心</a>
                 <a href="">相關條款</a>
-                <p>
-                    本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
-                </p>
             </div>
             
             <div class="buttom-right">
@@ -178,7 +281,32 @@
                 </ul>
 
             </div>
-            
+        
         </div>
+
+        <div class="last">
+            本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
+        </div>
+    </footer>    
 </body>
+
+<script>
+
+    let lightbox_el = document.getElementById('lightbox');
+    let btn_el = document.getElementsByClassName('btn')[0];
+    btn_el.addEventListener('click', function(){
+        lightbox_el.classList.remove('none');
+    });
+
+    lightbox_el.addEventListener('click', function(){
+        lightbox_el.classList.add('none');
+    });
+
+    lightbox_el.querySelector('article').addEventListener('click',function(e){
+        e.stopPropagation();
+    });
+
+
+</script>
+
 </html>

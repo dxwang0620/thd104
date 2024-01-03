@@ -1,0 +1,75 @@
+@import url('reset.css');
+
+
+/* --------------- header --------------- */
+
+header{
+    display: flex;
+    background-color: #A3CC00;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.header-left{
+    padding-left: 20px;
+}
+
+.header-right{
+    display: flex;
+}
+
+.header-right ul{
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-right ul li{
+    /* margin-right: 20px; */
+}
+
+.header-right ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.header-right a{
+    display: block;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+}
+
+.dropdown{
+    position: relative;
+    /* outline: 1px solid red; */
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+}
+
+.dropdown-content li a{
+    display: block;
+    /* background-color: white; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    background-color:#A3CC00 ;
+}
+
+.dropdown-content a:hover {
+    background-color: #e5e5e5;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}  
+
+

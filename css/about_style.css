@@ -1,0 +1,146 @@
+@import url('reset.css');
+
+/* --------------- header --------------- */
+
+header{
+    display: flex;
+    background-color: #A3CC00;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.header-left{
+    padding-left: 20px;
+}
+
+.header-right{
+    display: flex;
+}
+
+.header-right ul{
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-right ul li{
+    /* margin-right: 20px; */
+}
+
+.header-right ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.header-right a{
+    display: block;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+}
+
+.dropdown{
+    position: relative;
+    /* outline: 1px solid red; */
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+}
+
+.dropdown-content li a{
+    display: block;
+    /* background-color: white; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    background-color:#A3CC00 ;
+}
+
+.dropdown-content a:hover {
+    background-color: #e5e5e5;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}  
+
+/* --------------- wrapper --------------- */
+
+.wrapper{
+    width:1200px;
+    outline: 2px solid red;
+    margin: 150px auto ;
+}
+/* --------------- article --------------- */
+
+article{
+    text-align: center;
+    outline: 2px solid red;
+
+}
+
+article h1{
+    color: #A3CC00;
+    text-shadow: 2px 2px 5px black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+article h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: start;
+}
+
+article ul{
+    outline: 2px solid red;
+    display: flex;
+    /* margin: 0 auto; */
+}
+
+article ul img{
+    width: 100%;
+}
+
+article ul li{
+    outline: 2px solid red;
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+article ul li:nth-child(3){
+    margin-right: 0;
+}
+
+section{
+    display: flex;
+}
+
+section .left{
+    width: 50%;
+    border-right: 1px solid #ccc;
+}
+
+section .right{
+    width: 50%;
+}
+
+section .right ul{
+    flex-direction: column;
+}
+
+section .right ul li{
+    flex-basis: 0;
+    margin-left: 20px;
+    list-style-type: disc;
+    text-align: start;
+}
+
