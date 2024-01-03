@@ -266,7 +266,7 @@ a.nav-link{
 .wrapper span:nth-child(3){
     float: right;
     font-size: 20px;
-    margin-top: 10px; */
+    margin-top: 10px; 
     padding-top: 8px; 
     overflow: hidden; 
 } 
@@ -283,7 +283,7 @@ a.nav-link{
 
 .wrapper ul li p:last-child{
     font-size: 20px;
-    font-weight: bold; */
+    font-weight: bold; 
 }
 
 /* --------------- section --------------- */
