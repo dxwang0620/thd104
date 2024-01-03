@@ -495,8 +495,8 @@ a.nav-link{
     display: flex;
     background-color: #A3CC00;
     height: 100px;
-    padding-top: 50px;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -525,7 +525,7 @@ a.nav-link{
 }
 
 .buttom-right li{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 
@@ -536,7 +536,7 @@ a.nav-link{
 
 .buttom-right i{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .last{
@@ -583,12 +583,13 @@ a.nav-link{
     }
 
     .main-left{
-        margin: 20px auto;
+        margin: 0 auto;
         width: 100%;
     }
 
     .main-left h1{
         font-size: 28px;
+        margin-top: 10px;
     }
 
     .main-left p{
@@ -618,6 +619,80 @@ a.nav-link{
 
     .main-buttom li:nth-child(5){
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #A3CC00;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        border-top: 1px solid white;
+    }
+ 
+    .dropdown{
+        padding: 16px 0;
+        border-bottom: 2px solid white;
+        width: 100%
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: none;
+    } 
+
+    .last p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .buttom-left{
+        margin-left: 10px;
+    }
+
+    .buttom-right{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .buttom-left a{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .buttom-right i{
+        font-size: 20px;
     }
 }
 

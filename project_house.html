@@ -285,7 +285,9 @@
         </div>
 
         <div class="last">
+            <p>
             本網站為緯育TibaMe【第89期】前端工程師專業技術養成班學員作品，僅供學習與展示之用途
+        </p>
         </div>
     </footer>    
 </body>
@@ -305,6 +307,15 @@
     lightbox_el.querySelector('article').addEventListener('click',function(e){
         e.stopPropagation();
     });
+
+    let hamburger = document.querySelector('.hamburger');
+        let navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function(){
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
 
 
 </script>

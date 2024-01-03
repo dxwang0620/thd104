@@ -314,7 +314,7 @@ a.nav-link{
 .main-right{
     width: 400px;
     position: sticky;
-    height: 600px;
+    height: 450px;
     top: 150px;
     /* outline:2px red solid ; */
     margin-bottom: 200px;
@@ -695,7 +695,7 @@ footer{
     }
 
     .main-right{
-        height: 100px;
+        height: 200px;
     };
 
     .iframe{

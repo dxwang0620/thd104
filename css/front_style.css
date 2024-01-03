@@ -171,6 +171,7 @@ a.nav-link{
     /* outline: 2px red solid; */
     height: 20px;
     width: 200px;
+    outline: 1px black solid;
 }
 
 #lightbox .password{
@@ -762,6 +763,10 @@ footer{
         text-align: center;
     }
 
+    section .left{
+        height: 60vh;
+    }
+
     section .left h1{
         padding-left: 0;
     }
@@ -783,11 +788,6 @@ footer{
     section{
         width: 400px;
         margin: 30px auto 100px auto;
-    }
-
-    section .left{
-        width: 80vw;
-        height: 25vh;
     }
 
     section .left ul .search{
@@ -917,6 +917,10 @@ footer{
     .main4 li:nth-child(11){
         margin-right: 0;
     }
+
+    section .left{
+        height: 60vh
+    }
     
 }
 
@@ -930,7 +934,7 @@ footer{
     }
 
     section .left{
-        height: 22vh;
+        height: 55vh;
     }
 
     section .left ul .search{

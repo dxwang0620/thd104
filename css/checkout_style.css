@@ -23,7 +23,7 @@ a.nav-link{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 
 .nav-menu{
@@ -208,14 +208,15 @@ a.nav-link{
 
 .wrapper{
     margin: 150px auto 30px auto;
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
-    outline: 1px solid red;
+    /* outline: 1px solid red;
+} */
 }
 
 .main-left{
     width: 55%;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin-left: 20px;
 }
 
@@ -390,12 +391,12 @@ a.nav-link{
 /* --------------- main-right --------------- */
 
 .main-right{
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     padding:30px 30px 0 30px;
     height: 450px;
     background-color:  #A3CC00;
     border-radius: 15px;
-    margin-left:30px ;
+    margin-left: 30px;
     margin-right: 20px;
 } 
 
@@ -407,7 +408,7 @@ a.nav-link{
 .right-top h1{
     color: #fff;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
     padding-top: 20px;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -415,12 +416,13 @@ a.nav-link{
 
 .right-top p{
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 15px;
 }
 
 
 .right-buttom{
+    padding: 10px 0;
     margin-top: 20px;
     margin-bottom: 20px;
     border-top: 2px dashed black;
@@ -468,15 +470,14 @@ footer{
 
 .buttom{
     display: flex;
-   
-    padding-top: 50px;
+    align-items: center;
     justify-content: space-between;
+    line-height: 100px;
     
 }
 
 .buttom-left{
     margin-left: 30px;
-    line-height: 50px;
 }
 
 .buttom-left a{
@@ -488,7 +489,7 @@ footer{
 
 .buttom-right{
     /* outline: 2px solid red; */
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .buttom-right ul{
@@ -499,7 +500,7 @@ footer{
 }
 
 .buttom-right li{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 
@@ -510,7 +511,7 @@ footer{
 
 .buttom-right i{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .none{
@@ -530,4 +531,190 @@ footer{
 .last{
     background-color: #A3CC00;
 
+}
+
+/* --------------- RWD --------------- */
+
+@media screen and (max-width: 1100px){
+    
+    .wrapper{
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .main-left{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .main-left .choose ul li{
+        margin-left: 240px;
+    }
+
+    .main-right{
+        margin: 0 80px;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .wrapper{
+        width: 700px;
+    }
+
+    .main-left .choose ul li{
+        margin-left: 128px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #A3CC00;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        border-top: 1px solid white;
+    }
+ 
+    .dropdown{
+        padding: 16px 0;
+        border-bottom: 2px solid white;
+        width: 100%
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: none;
+    } 
+
+    .wrapper{
+        width: 600px;
+    }
+
+    .main-right{
+        margin: 0 40px;
+    }
+
+    .main-left .choose ul li{
+        margin-left: 100px;
+    }
+
+    .accept{
+        width: 20%;
+    }
+
+    .last p{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .wrapper{
+        width: 500px;
+    }
+
+    .main-left .choose ul li{
+        margin-left: 60px;
+    }
+
+    .buttom-left{
+        margin-left: 10px;
+    }
+
+    .buttom-right{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .wrapper{
+        width: 400px;
+    }
+
+    .main-right{
+        margin: 0 0;
+    }
+
+    .right-top img{
+        width: 200px;
+    }
+
+
+    .main-left .choose ul li{
+        margin-left: 28px;
+    }
+
+    .buttom-left a{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .buttom-right i{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+    .wrapper{
+        width: 350px;
+        padding-bottom: 30px;
+    }
+
+    .main-left .choose ul li{
+        margin-left: 10px;
+    }
+
+    .main-left .left-middle ul input{
+        margin-left: 20px;
+    }
+
+    .right-top img{
+        width: 150px;
+    }
+
+    .main-right{
+        height: 395px;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .main-left .choose ul li {{
+        margin-left: 0;
+    }
+
+    .wrapper{
+        width: 300px;
+        padding-bottom: 30px;
+    }
+}
 }
