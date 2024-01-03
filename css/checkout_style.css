@@ -350,12 +350,11 @@ a.nav-link{
 
 .left-middle2 ul{
     /* outline: 2px red solid; */
-    height: 50px;
+    margin-bottom: 20px;
 }
 
 .left-middle2 ul li{
     /* outline: 2px red solid; */
-    height: 50px;
     font-size: 30px;
 }
 
@@ -656,6 +655,11 @@ footer{
     .buttom-right{
         margin-right: 5px;
     }
+
+    .left-middle2 ul li{
+        /* outline: 2px red solid; */
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -672,6 +676,10 @@ footer{
         width: 200px;
     }
 
+    .left-middle2 ul li{
+        /* outline: 2px red solid; */
+        font-size: 18px;
+    }
 
     .main-left .choose ul li{
         margin-left: 28px;
@@ -692,6 +700,11 @@ footer{
     .wrapper{
         width: 350px;
         padding-bottom: 30px;
+    }
+
+    .left-middle2 ul li{
+        /* outline: 2px red solid; */
+        font-size: 12px;
     }
 
     .main-left .choose ul li{

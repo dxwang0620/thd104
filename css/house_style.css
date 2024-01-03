@@ -22,7 +22,7 @@ a.nav-link{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 
 .nav-menu{
@@ -212,7 +212,7 @@ a.nav-link{
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
-    outline: 2px red solid;
+    /* outline: 2px red solid; */
 }
 
 .block{
@@ -398,13 +398,12 @@ a.nav-link{
 .main-right li{
     margin: 0 auto;
     /* outline: 2px red solid; */
-    width: 70%;
 }
 
 .main-right li input{
     margin: 0 auto;
     /* outline: 2px red solid; */
-    width: 100%;
+    width: 370px;
     height: 30px;
     margin-bottom: 10px;
     padding-left: 5px;
@@ -412,10 +411,11 @@ a.nav-link{
 
 .main-right .reserve{
     margin-top: 15px;
-    margin-left: 5px;
+    margin-left: 8px;
     background-color: black;
     color: white;
     width: 60%;
+    padding-left: 0px;
 }
 
 .main-right a{
@@ -558,6 +558,23 @@ a.nav-link{
     .main-buttom li:nth-child(6){
         margin-right: 20px;
     }
+
+    .main-right li input{
+        margin: 0 auto;
+        /* outline: 2px red solid; */
+        width: 320px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    
+    .main-right .reserve{
+        margin-top: 15px;
+        margin-left: 8px;
+        background-color: black;
+        color: white;
+        padding-left: 0px;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -577,8 +594,25 @@ a.nav-link{
     .main-buttom li:nth-child(6){
         margin-right: 0px;
     }
+
+    .main-right li input{
+        margin: 0 auto;
+        /* outline: 2px red solid; */
+        width: 260px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    
 }    
 
+@media screen and (max-width: 850px){
+
+    .main-right li input{
+        width: 200px;
+    }
+}  
+    
 
 @media screen and (max-width: 742px){
 
@@ -623,6 +657,24 @@ a.nav-link{
 
     .main-buttom li:nth-child(5){
         margin-right: 0;
+    }
+
+    .main-right li input{
+        margin: 0 auto;
+        /* outline: 2px red solid; */
+        width: 480px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    
+    .main-right .reserve{
+        margin-top: 15px;
+        margin-left: 8px;
+        background-color: black;
+        color: white;
+        width: 60%;
+        padding-left: 0px;
     }
 }
 
@@ -675,6 +727,20 @@ a.nav-link{
     .last p{
         font-size: 2vw;
     }
+
+    .main-right{
+        margin-top: 20px;
+    }
+
+    .main-right li input{
+        margin: 0 auto;
+        /* outline: 2px red solid; */
+        width: 440px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    
 }
 
 @media screen and (max-width: 600px){
@@ -685,6 +751,24 @@ a.nav-link{
 
     .buttom-right{
         margin-right: 5px;
+    }
+
+    .main-right li input{
+        margin: 0 auto;
+        /* outline: 2px red solid; */
+        width: 370px;
+        height: 30px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    
+    .main-right .reserve{
+        margin-top: 15px;
+        margin-left: 8px;
+        background-color: black;
+        color: white;
+        width: 60%;
+        padding-left: 0px;
     }
 }
 
@@ -698,18 +782,41 @@ a.nav-link{
     .buttom-right i{
         font-size: 20px;
     }
+
+    .main-right li input{
+        width: 300px;
+    }
+    
+    .main-right .reserve{
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 430px){
+
     .main-right{
-        width: 100%;
-        margin: 0 auto;
+        width: 360px;
+        margin-top: 20px;
+    }
+
+    .main-right li input{
+        width: 270px;
+    }
+    
+    .main-right .reserve{
+        margin-left: 30px;
     }
 }
 
 @media screen and (max-width: 390px){
-    .main-left ul li {
-        flex-basis: 80px;
+  
+    .main-right{
+        width: 340px;
+        margin-top: 20px;
+    }
+
+    .main-right li input{
+        width: 250px;
     }
 
 }

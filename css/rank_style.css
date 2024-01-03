@@ -212,7 +212,7 @@ a.nav-link{
 .wrapper{
     max-width: 1200px;
     margin: 150px auto 100px auto;
-    outline: 2px red solid;
+    /* outline: 2px red solid; */
 }
 
 .wrapper h1{
@@ -225,7 +225,7 @@ a.nav-link{
     margin-top: 50px;
     width: 800px;
     height: 400px;
-    outline: 2px red solid;
+    /* outline: 2px red solid; */
 }
 
 .swiper img{
@@ -239,7 +239,7 @@ a.nav-link{
     margin-top: 100px;
     margin-bottom: 50px;
     /* background-color: green; */
-    outline: 2px solid gold;
+    /* outline: 2px solid gold; */
 }
 
 .middle-left {
@@ -343,7 +343,7 @@ a.nav-link{
 
 .main-buttom{
     margin: 0 auto;
-    outline: 2px red solid;
+    /* outline: 2px red solid; */
 }
 
 .main-buttom h1{
@@ -440,6 +440,15 @@ footer{
 
 /* --------------- RWD --------------- */
 
+@media screen and (max-width: 1100px){
+
+    .main-buttom .text{
+        width: 800px;
+    }
+}
+    
+
+
 @media screen and (max-width: 1000px){
 
     .middle-left{
@@ -452,10 +461,20 @@ footer{
         margin-right: 20px;
     }
 
+    .main-buttom .text{
+        width: 700px;
+    }
 }
 
 @media screen and (max-width: 800px){
 
+    .main-buttom .text{
+        width: 550px;
+    }
+
+    .middle{
+        margin-top: 50px;
+    }
 
     .wrapper h1{
         margin-left: 100px;
@@ -600,16 +619,33 @@ footer{
     .buttom-right i{
         font-size: 20px;
     }
+
+    .main-buttom .text{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 430px){
     .swiper{
         width: 380px;
         height: 190px;
+        margin-top: 30px;
     }
 
     .middle-right{
         width: 90vw;
+    }
+
+    .wrapper h1{
+        margin-left: 13px;
+    }
+
+    .wrapper .middle-left h1{
+        margin-left: 0px;
+    }
+
+    .main-buttom .text{
+        margin-left: 68px;
     }
 }
 
